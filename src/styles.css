@@ -8,6 +8,15 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/nyc-skyline.jpeg");
@@ -53,8 +62,48 @@ header a {
   text-transform: uppercase;
   background-color: white;
 }
+footer {
+  color: black;
+  background-image: linear-gradient(
+      rgba(182, 205, 189, 0.5),
+      rgba(182, 205, 189, 0.5)
+    ),
+    url(../images/landscape-central.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
 
-@media (max-width: 900px) {
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.9;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: black;
+  opacity: 0.9;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
